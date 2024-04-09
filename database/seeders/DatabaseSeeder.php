@@ -1,20 +1,20 @@
 <?php
 
 namespace Database\Seeders;
-
-use App\Models\Books;
-// use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use Database\Factories\BookFactory;
 use Illuminate\Database\Seeder;
+use App\Models\Book; // Make sure this import statement is correct
 
 class DatabaseSeeder extends Seeder
 {
     /**
      * Seed the application's database.
+     *
+     * @return void
      */
-    public function run(): void
+    public function run()
     {
-        // User::factory(10)->create();
+        // Create 20 books using the Book factory
         Book::factory(20)->create();
-        
     }
 }
