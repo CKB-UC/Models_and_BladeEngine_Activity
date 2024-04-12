@@ -1,9 +1,9 @@
 <?php
 
-namespace Database\Factories;
+namespace App\Database\Factories;
 
 use App\Models\Book;
-use illuminate\Database\Eloquent\Factories\Factory;
+use Illuminate\Database\Eloquent\Factories\Factory;
 
 class BookFactory extends Factory{
     /** 

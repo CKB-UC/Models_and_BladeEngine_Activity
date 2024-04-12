@@ -1,5 +1,5 @@
 <?php
-
+namespace App\Database\Migration;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
@@ -18,7 +18,7 @@ return new class extends Migration
             $table->string('title');
             $table->string('author');
             $table->text('description')->nullable();
-            $table->date('date_published');
+            $table->date('date_published')->format('Y-m-d');
         });
     }
 
